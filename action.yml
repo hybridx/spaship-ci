@@ -1,0 +1,17 @@
+name: 'SPAship CI github action'
+description: 'SPAship github action for monorepos and polyrepos'
+inputs:
+  api-key:  # id of input
+    description: 'API key to deploy SPAs'
+    required: true
+    default: 'xxxx'
+  repo-type: # monorepo / polyrepo
+    description: 'What type of repo is it -> [mono / ploy]'
+    required: true
+    default: poly
+outputs:
+  successful-deployments: # Deployed SPAs
+    description: 'Deployment status of SPAs'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

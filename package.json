@@ -1,0 +1,44 @@
+{
+  "name": "spaship-ci",
+  "version": "0.0.1",
+  "description": "SPAship github action for monorepos and polyrepos",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf ./dist && ncc build index.js --license licenses.txt",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaship/spaship-ci.git"
+  },
+  "keywords": [
+    "spaship",
+    "github",
+    "action",
+    "actions",
+    "action",
+    "ci",
+    "deployment",
+    "javascript",
+    "action",
+    "github",
+    "javascript",
+    "action",
+    "red",
+    "hat"
+  ],
+  "author": "hybridx <hybridx18@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spaship/spaship-ci/issues"
+  },
+  "homepage": "https://github.com/spaship/spaship-ci#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "rimraf": "^3.0.2"
+  }
+}
